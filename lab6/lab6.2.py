@@ -1,5 +1,5 @@
 class Vehicle:
-    def init(self, make, model):
+    def __init__(self, make, model):
         self.make = make
         self.model = model
 
@@ -8,8 +8,8 @@ class Vehicle:
 
 
 class Car(Vehicle):
-    def init(self, make, model, fuel_type):
-        super().init(make, model)
+    def __init__(self, make, model, fuel_type):
+        super().__init__(make, model)
         self.fuel_type = fuel_type
 
     def get_info(self):
@@ -25,4 +25,5 @@ car3 = Car("Ford", "F-250", "дизель")
 
 print("Базовый класс Vehicle:")
 print(vehicle.get_info())
+
 print(car1.get_info())
