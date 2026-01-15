@@ -1,5 +1,5 @@
 class UserAccount:
-    def init(self, username, email, password):
+    def __init__(self, username, email, password):
         self.username = username
         self.email = email
         self.__password = password
@@ -26,5 +26,6 @@ if user1.check_password(user_input):
 else:
     print("Неверный пароль")
 print(user1.get_account_info())
+
 
 print(user1.__password)
