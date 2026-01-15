@@ -1,8 +1,8 @@
 #2.1.1
 def greet(name):
-    return ('Здравствуйте,', name)
-name1 = str(input('Введите ваше имя: '))
-print(greet(name1))
+ print(f"Здавствуйте, {name}")
+name = str(input("Введите ваше имя:"))
+greet(name)
 
 #2.1.2
 def square(number):
@@ -18,4 +18,5 @@ def max_of_two(x, y):
         return y
 x = int(input('Введете первое число: '))
 y = int(input('Введите второе число: '))
+
 print('Большее число:', max_of_two(x, y))
